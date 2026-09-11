@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Thongsuk Portfolio</title>
+    <style src="style.css"></style>
+  </head>
+
+  <body class="bg-slate-50 font-sans text-slate-800">
+    <nav
+      class="fixed inset-x-0 top-0 z-40 border-b border-slate-200 bg-white/90 backdrop-blur"
+    >
+      <div
+        class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5"
+      >
+        <a href="#home" class="text-lg font-bold tracking-tight text-indigo-600"
+          >PORTFOLIO</a
+        >
+        <div
+          class="flex items-center gap-5 text-sm font-medium text-slate-600 sm:gap-7"
+        >
+          <a href="#about" class="hover:text-indigo-600">เกี่ยวกับฉัน</a
+          ><a href="#education" class="hover:text-indigo-600">การศึกษา</a
+          ><a href="#projects" class="hover:text-indigo-600">ผลงาน</a>
+          <!-- <a href="#certificates" class="hover:text-indigo-600">ประกาศนียบัตร</a> -->
+          <a href="#contact" class="hover:text-indigo-600">ติดต่อ</a>
+        </div>
+      </div>
+    </nav>
+    <main id="home" class="mx-auto max-w-6xl px-5 pt-16">
+      <section
+        id="about"
+        class="grid min-h-[440px] items-center gap-10 py-16 md:grid-cols-[240px_1fr]"
+      >
+        <img
+          src="img/FaceFront Protrait.png"
+          alt="ThongsukTho"
+          class="h-full w-44 rounded-3xl object-cover shadow-lg md:w-60"
+        />
+        <div>
+          <p class="mb-3 font-semibold text-indigo-600">สวัสดีครับ, ผมคือ</p>
+          <h1
+            class="text-4xl font-bold tracking-tight text-slate-900 sm:text-6xl"
+          >
+            ทองสุข ทองลมูล
+          </h1>
+          <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
+            นักศึกษาวิทยาการคอมพิวเตอร์ผู้สนใจด้านการพัฒนาเว็บไซต์และแอปพลิเคชันมือถือ
+          </p>
+          <a
+            href="#projects"
+            class="mt-8 inline-flex rounded-xl bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700"
+            >ดูผลงานของฉัน</a
+          >
+          <a
+            href="img/Resume-ThoTho.pdf"
+            download
+            class="mt-4 inline-flex rounded-xl bg-slate-600 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-slate-700"
+          >
+            &#10515; ดาวน์โหลด Resume
+          </a>
+        </div>
+      </section>
+      <section
+        id="education"
+        class="scroll-mt-20 border-t border-slate-200 py-20"
+      >
+        <p class="text-sm font-bold tracking-widest text-indigo-600">
+          EDUCATION
+        </p>
+        <h2 class="mt-2 text-3xl font-bold text-slate-900">ประวัติการศึกษา</h2>
+        <div class="mt-9 space-y-5 border-l-2 border-indigo-200 pl-6">
+          <article class="relative rounded-2xl bg-white p-5 shadow-sm">
+            <span
+              class="absolute -left-[34px] top-7 size-4 rounded-full border-4 border-slate-50 bg-indigo-600"
+            ></span>
+            <p class="text-sm text-indigo-600">2566 - ปัจจุบัน</p>
+            <h3 class="mt-1 font-bold">มหาวิทยาลัศรีปทุม</h3>
+            <p class="mt-1 text-sm text-slate-600">
+              คณะเทคโนโลยีสารสนเทศ /
+              สาขาวิชาวิทยาการคอมพิวเตอร์และนวัตกรรมการพัฒนาซอฟต์แวร์
+            </p>
+            <h4 class="mt-2 text-lg font-bold">ปริญญาตรี</h4>
+            <p class="mt-1 text-sm text-slate-600">GPA: 3.90</p>
+          </article>
+          <article class="relative rounded-2xl bg-white p-5 shadow-sm">
+            <span
+              class="absolute -left-[34px] top-7 size-4 rounded-full border-4 border-slate-50 bg-indigo-600"
+            ></span>
+            <p class="text-sm text-indigo-600">2563 - 2566</p>
+            <h3 class="mt-1 font-bold">โรงเรียนรัตนโกสินทร์สมโภชลาดกระบัง</h3>
+            <p class="mt-1 text-sm text-slate-600">
+              แผนการเรียน คณิตศาสตร์-วิทยาศาสตร์
+            </p>
+          </article>
+        </div>
+      </section>
+      <section
+        id="projects"
+        class="scroll-mt-20 border-t border-slate-200 py-20"
+      >
+        <p class="text-sm font-bold tracking-widest text-indigo-600">
+          PROJECTS
+        </p>
+        <h2 class="mt-2 text-3xl font-bold text-slate-900">ผลงานของฉัน</h2>
+        <div class="relative mt-9 overflow-hidden">
+          <div
+            id="project-track"
+            class="flex gap-6 transition-transform duration-500"
+          >
+            <button
+              type="button"
+              class="project-card group shrink-0 text-left sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
+              data-project="0"
+            >
+              <article
+                class="overflow-hidden rounded-2xl bg-white shadow-sm transition duration-300 group-hover:-translate-y-2 group-hover:shadow-xl"
+              >
+                <img
+                  src="img/Bookstore/Book1.png"
+                  alt="ภาพตัวอย่างโปรเจกต์ Book'ed"
+                  class="aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-110"
+                />
+                <div class="p-5">
+                  <h3 class="font-bold transition group-hover:text-indigo-600">
+                    Book'ed
+                  </h3>
+                  <p class="mt-1 text-sm text-slate-600">ระบบร้านขายหนังสือมือสอง</p>
+                </div>
+              </article>
+            </button>
+            <button
+              type="button"
+              class="project-card group shrink-0 text-left sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
+              data-project="1"
+            >
+              <article
+                class="overflow-hidden rounded-2xl bg-white shadow-sm transition duration-300 group-hover:-translate-y-2 group-hover:shadow-xl"
+              >
+                <img
+                  src="img/HPog/HPmanapage.png"
+                  alt="ภาพตัวอย่างโปรเจกต์ HomeyPets"
+                  class="aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-110"
+                />
+                <div class="p-5">
+                  <h3 class="font-bold transition group-hover:text-indigo-600">
+                    HomeyPets
+                  </h3>
+                  <p class="mt-1 text-sm text-slate-600">แอปพลิเคชันร้านรับฝากสัตว์เลี้ยง</p>
+                </div>
+              </article>
+            </button>
+            <button
+              type="button"
+              class="project-card group shrink-0 text-left sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
+              data-project="2"
+            >
+              <article
+                class="overflow-hidden rounded-2xl bg-white shadow-sm transition duration-300 group-hover:-translate-y-2 group-hover:shadow-xl"
+              >
+                <img
+                  src="img/HPchatbot/HPC1.png"
+                  alt="ภาพตัวอย่างโปรเจกต์ HomeyPetsChatbot"
+                  class="aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-110"
+                />
+                <div class="p-5">
+                  <h3 class="font-bold transition group-hover:text-indigo-600">
+                    HomeyPetsChatbot
+                  </h3>
+                  <p class="mt-1 text-sm text-slate-600">แชทบอทเพื่อให้คำแนะนำการดูแลสัตว์เลี้ยงเบื้องต้น</p>
+                </div>
+              </article>
+            </button>
+          </div>
+        </div>
+        <div class="mt-6 flex gap-3">
+          <button
+            id="project-prev"
+            type="button"
+            class="rounded-lg border border-slate-300 px-4 py-2 text-sm font-semibold hover:bg-white"
+          >
+            ← ก่อนหน้า</button
+          ><button
+            id="project-next"
+            type="button"
+            class="rounded-lg border border-slate-300 px-4 py-2 text-sm font-semibold hover:bg-white"
+          >
+            ถัดไป →
+          </button>
+        </div>
+      </section>
+      <!-- Certificates ใส่ทีหลัง -->
+      <!-- <section
+        id="certificates"
+        class="scroll-mt-20 border-t border-slate-200 py-20"
+      >
+        <p class="text-sm font-bold tracking-widest text-indigo-600">
+          CERTIFICATES
+        </p>
+        <h2 class="mt-2 text-3xl font-bold text-slate-900">ประกาศนียบัตร</h2>
+        <div class="mt-9 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <button
+            type="button"
+            class="certificate group relative overflow-hidden rounded-2xl bg-white text-left shadow-sm"
+            data-certificate="https://placehold.co/1200x850/fef3c7/92400e?text=Certificate+01"
+            data-title="ชื่อประกาศนียบัตร 01"
+          >
+            <img
+              src="https://placehold.co/800x560/fef3c7/92400e?text=Certificate+01"
+              alt="ประกาศนียบัตร 01"
+              class="aspect-[4/3] w-full object-cover"
+            /><span
+              class="pointer-events-none absolute inset-x-3 bottom-3 translate-y-3 rounded-lg bg-slate-900/90 px-3 py-2 text-center text-sm text-white opacity-0 transition group-hover:translate-y-0 group-hover:opacity-100"
+              >ชื่อประกาศนียบัตร 01</span
+            >
+          </button>
+          <button
+            type="button"
+            class="certificate group relative overflow-hidden rounded-2xl bg-white text-left shadow-sm"
+            data-certificate="https://placehold.co/1200x850/dcfce7/166534?text=Certificate+02"
+            data-title="ชื่อประกาศนียบัตร 02"
+          >
+            <img
+              src="https://placehold.co/800x560/dcfce7/166534?text=Certificate+02"
+              alt="ประกาศนียบัตร 02"
+              class="aspect-[4/3] w-full object-cover"
+            /><span
+              class="pointer-events-none absolute inset-x-3 bottom-3 translate-y-3 rounded-lg bg-slate-900/90 px-3 py-2 text-center text-sm text-white opacity-0 transition group-hover:translate-y-0 group-hover:opacity-100"
+              >ชื่อประกาศนียบัตร 02</span
+            >
+          </button>
+          <button
+            type="button"
+            class="certificate group relative overflow-hidden rounded-2xl bg-white text-left shadow-sm"
+            data-certificate="https://placehold.co/1200x850/e0e7ff/3730a3?text=Certificate+03"
+            data-title="ชื่อประกาศนียบัตร 03"
+          >
+            <img
+              src="https://placehold.co/800x560/e0e7ff/3730a3?text=Certificate+03"
+              alt="ประกาศนียบัตร 03"
+              class="aspect-[4/3] w-full object-cover"
+            /><span
+              class="pointer-events-none absolute inset-x-3 bottom-3 translate-y-3 rounded-lg bg-slate-900/90 px-3 py-2 text-center text-sm text-white opacity-0 transition group-hover:translate-y-0 group-hover:opacity-100"
+              >ชื่อประกาศนียบัตร 03</span
+            >
+          </button>
+        </div>
+      </section> -->
+      <!-- Contact -->
+      <section
+        id="contact"
+        class="scroll-mt-20 border-t border-slate-200 py-20"
+      >
+        <p class="text-sm font-bold tracking-widest text-indigo-600">CONTACT</p>
+        <h2 class="mt-2 text-3xl font-bold text-slate-900">ช่องทางติดต่อ</h2>
+        <p class="mt-3 text-slate-600">
+          สามารถติดต่อหรือดูข้อมูลเพิ่มเติมของผมได้จากช่องทางด้านล่าง
+        </p>
+        <div class="mt-9 grid gap-4 sm:grid-cols-2">
+          <a
+            href="tel:+66633676896"
+            class="group flex items-center gap-4 rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+          >
+            <span
+              class="grid size-12 place-items-center rounded-xl bg-indigo-100 text-xl text-indigo-600"
+              >&#9742;</span
+            >
+            <span
+              ><span class="block text-sm text-slate-500">เบอร์โทรศัพท์</span
+              ><span class="font-semibold group-hover:text-indigo-600"
+                >+66 63 367 6896</span
+              ></span
+            >
+          </a>
+          <a
+            href="mailto:tthhonnggssukk@gmail.com"
+            class="group flex items-center gap-4 rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+          >
+            <span
+              class="grid size-12 place-items-center rounded-xl bg-indigo-100 text-xl text-indigo-600"
+              >&#9993;</span
+            >
+            <span
+              ><span class="block text-sm text-slate-500">อีเมล</span
+              ><span class="font-semibold group-hover:text-indigo-600"
+                >tthhonnggssukk@gmail.com</span
+              ></span
+            >
+          </a>
+          <a
+            href="https://github.com/tthhonnggssukktthho"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group flex items-center gap-4 rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+          >
+            <span
+              class="grid size-12 place-items-center rounded-xl bg-indigo-100 text-xl font-bold text-indigo-600"
+              >GH</span
+            >
+            <span
+              ><span class="block text-sm text-slate-500">GitHub</span
+              ><span class="font-semibold group-hover:text-indigo-600"
+                >https://github.com/tthhonnggssukktthho</span
+              ></span
+            >
+          </a>
+          <a
+            href="https://www.linkedin.com/in/thongsuk-thonglamun-61b677435"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group flex items-center gap-4 rounded-2xl bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+          >
+            <span
+              class="grid size-12 place-items-center rounded-xl bg-indigo-100 text-xl font-bold text-indigo-600"
+              >in</span
+            >
+            <span
+              ><span class="block text-sm text-slate-500">LinkedIn</span
+              ><span class="font-semibold group-hover:text-indigo-600"
+                >www.linkedin.com/in/thongsuk-thonglamun-61b677435</span
+              ></span
+            >
+          </a>
+        </div>
+      </section>
+    </main>
+    <dialog
+      id="portfolio-modal"
+      class="m-auto w-[min(92vw,900px)] rounded-2xl p-0 backdrop:bg-slate-950/70"
+    >
+      <div class="relative bg-white">
+        <button
+          id="modal-close"
+          type="button"
+          class="absolute right-3 top-3 z-10 grid size-10 place-items-center rounded-full bg-white/90 text-xl shadow"
+          aria-label="ปิด"
+        >
+          ×
+        </button>
+        <div id="modal-content"></div>
+      </div>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
